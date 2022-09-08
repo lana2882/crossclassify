@@ -20,6 +20,11 @@ repositories {
 ```
 Then, add the code below to your app module `build.gradle` file.
 ```kotlin
+defaultConfig {
+        ...
+        targetSdk 31
+    }
+    
 dependencies {
     implementation 'com.github.lana2882:crossclassify:0.1'
 }
@@ -114,9 +119,12 @@ class MainActivity : TrackerActivity() {
     override fun getExternalMetaData(): List<FieldMetaData>? = null
 }
 ```
-- Both behavioral and content tracking rely on setting `onclicklistener` for your submit button and call `trackerClickSubmitButton()` as below:
+- Both behavioral and content tracking rely on setting `onclicklistener` for your submit button and call `trackerClickSubmitButton()` in the last line of it, because it will erase field contents. as below:
 ```kotlin
 submitButton.setOnClickListener {
+    ...
+    ...
+    ...
     trackerClickSubmitButton()
 }
 ```
