@@ -75,7 +75,7 @@ For the form that you need form content and behavior analysis in it, do the foll
 - We have supported editText, radioGroup and checkBox for form fields.
 - Use `TrackerEditText`, `TrackerRadioGroup` and `TrackerCheckBox` for your fields in XML file and set each `field name`, `radio_field_name` and `check_box_field_name` to fieldName that allows us to provide [Form Behavioral Tracking](https://gitlab.com/abdal1/crossclassify/matomo-android-sdk/-/settings/integrations).
 
-:warning: **for field that contain email, field name must be email string in lowercase.**
+:warning: **for field that contain email, field name must be "email" string in lowercase.**
 ```xml
     <!--CHANGE BEFORE COMPILE-->
     <com.crossclassify.trackersdk.utils.view.TrackerEditText
@@ -115,7 +115,7 @@ For the form that you need form content and behavior analysis in it, do the foll
 -  Override `getFormName()` method and define a name for your form
 -  Override `getExternalMetaData()` (if you don't have recyclerview just return null).
 
-:warning: **for sign up forms , your form name must contain singnup string without space.**
+:warning: **for sign up forms , your form name must contain "singnup" string without space.**
 ```kotlin
 class MainActivity : TrackerActivity() {
     override fun getFormName(): String = <YOUR_FORM_NAME> //CHANGE BEFORE COMPILE
