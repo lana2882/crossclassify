@@ -26,7 +26,7 @@ defaultConfig {
     }
     
 dependencies {
-    implementation 'com.github.lana2882:crossclassify:0.1'
+    implementation 'com.github.lana2882:crossclassify:0.8'
 }
 ```
 Then,  press "Sync now" in the bar that appears in Android Studio:
