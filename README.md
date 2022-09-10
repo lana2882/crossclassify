@@ -385,4 +385,7 @@ adapter.notifyDataSetChanged()
 #### Done
 Adding CrossClassify to your App Done successfuly.
 Now we are waiting for the first data.
-
+* * *
+#### Changelog
+##### **1.0.0**
+- first stable build
