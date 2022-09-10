@@ -115,7 +115,13 @@ For the form that you need form content and behavior analysis in it, do the foll
 -  Override `getFormName()` method and define a name for your form
 -  Override `getExternalMetaData()` (if you don't have recyclerview just return null).
 
-:warning: **for sign up forms , your form name must contain "singnup" string without space.**
+### :warning: **Warning**
+- For `sign up` forms, your form name must contain "singnup" string **(without space or dash in between)**.
+- For `login` forms, your form name must contain "login" string **(without space or dash in between)**.
+- **DO NOT** use both "signup" and "login" strings in a single string as form name.
+- **BAD EXAMPLES**:
+  - sign up, sign-up, signup-login
+
 ```kotlin
 class MainActivity : TrackerActivity() {
     override fun getFormName(): String = <YOUR_FORM_NAME> //CHANGE BEFORE COMPILE
