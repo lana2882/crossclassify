@@ -75,7 +75,7 @@ For the form that you need form content and behavior analysis in it, do the foll
 - We have supported editText, radioGroup and checkBox for form fields.
 - Use `TrackerEditText`, `TrackerRadioGroup` and `TrackerCheckBox` for your fields in XML file and set each `field name`, `radio_field_name` and `check_box_field_name` to fieldName that allows us to provide [Form Behavioral Tracking](https://gitlab.com/abdal1/crossclassify/matomo-android-sdk/-/settings/integrations).
 
-:warning: ** For account opening fraud detection, you must have a field which name is "email" and contains the content of the email.**
+:warning: **For account opening fraud detection, you must have a field which name is "email" and contains the content of the email.**
 ```xml
     <!--CHANGE BEFORE COMPILE-->
     <com.crossclassify.trackersdk.utils.view.TrackerEditText
