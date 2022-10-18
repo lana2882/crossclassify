@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 
 object Api {
-    private var baseUrl = "https://i1uaiuond3.execute-api.ap-southeast-2.amazonaws.com/"
+    private var baseUrl = "https://api.crossclassify.com/matomo/"
 
     private var client: ApiInterface? = null
     fun client(context: Context): ApiInterface {
